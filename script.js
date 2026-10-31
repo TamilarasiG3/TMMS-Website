@@ -1,10 +1,10 @@
 (function(){
 var N="918667815844";
 var M={
- general:"Hello TMMS Learnings and Study Point, I would like to enquire about tuition admissions. Please share the available classes, subjects, timings, and fees.",
- admission:"Hello TMMS Learnings and Study Point, I am interested in tuition admissions. Please share the available classes, subjects, timings, fees, and admission process.",
- directions:"Hello TMMS Learnings and Study Point, could you please share the Google Maps location and directions to your tuition centre?",
- fab:"Hello TMMS Learnings and Study Point, I would like to know more about tuition admissions."
+ general:"Hello TMMS Learnings and Study Point, I would like to enquire about tution admissions. Please share the available classes, subjects, timings, and fees.",
+ admission:"Hello TMMS Learnings and Study Point, I am interested in tution admissions. Please share the available classes, subjects, timings, fees, and admission process.",
+ directions:"Hello TMMS Learnings and Study Point, could you please share the Google Maps location and directions to your tution centre?",
+ fab:"Hello TMMS Learnings and Study Point, I would like to know more about tution admissions."
 };
 function wa(msg){return "https://wa.me/"+N+"?text="+encodeURIComponent(msg)}
 var I={
@@ -27,14 +27,14 @@ function btn(msg,label,aria){return '<a class="btn btn-wa btn-sm" href="'+wa(msg
 var cls=[["6th","Strengthen the basics as school learning becomes more structured."],["7th","Build understanding across subjects and steady study routines."],["8th","Support concept clarity as syllabus depth increases."],["9th","Prepare a solid academic base for the senior school years."],["10th","Focused learning support for an important school year."],["11th","Help students settle into higher secondary studies."],["12th","Guidance and support for the final school year."]];
 var g=document.getElementById("classGrid");
 cls.forEach(function(c){
- var m="Hello TMMS Learnings and Study Point, I would like to enquire about tuition availability for "+c[0]+" Standard. Please share the subjects, timings, and fees.";
+ var m="Hello TMMS Learnings and Study Point, I would like to enquire about tution availability for "+c[0]+" Standard. Please share the subjects, timings, and fees.";
  g.insertAdjacentHTML("beforeend",'<article class="card rv"><div class="ico">'+svg("book")+'</div><h3>'+c[0]+' Standard</h3><p>'+c[1]+'</p></article>');
 });
 
 var sub=[["Mathematics","calc","Understand concepts, methods and problem-solving step by step."],["Science","flask","Explore ideas in physics, chemistry and biology with clarity."],["English","lang","Develop reading, writing and grammar confidence."],["Social Science","globe","Make history, geography, civics and economics easier to follow."],["Tamil","pen","Strengthen language skills, reading and written expression."]];
 var s=document.getElementById("subjGrid");
 sub.forEach(function(c){
- var m="Hello TMMS Learnings and Study Point, I would like to enquire about "+c[0]+" tuition. Please share the standards, timings, and fees.";
+ var m="Hello TMMS Learnings and Study Point, I would like to enquire about "+c[0]+" tution. Please share the standards, timings, and fees.";
  s.insertAdjacentHTML("beforeend",'<article class="card rv"><div class="ico">'+svg(c[1])+'</div><h3>'+c[0]+'</h3><p>'+c[2]+'</p></article>');
 });
 
@@ -43,7 +43,7 @@ var f=document.getElementById("featGrid");
 ft.forEach(function(c){f.insertAdjacentHTML("beforeend",'<article class="card rv"><div class="ico">'+svg(c[0])+'</div><h3>'+c[1]+'</h3><p style="margin:0">'+c[2]+'</p></article>')});
 
 var C="Please contact us through WhatsApp for the latest information.";
-var fq=[["Which classes are available?","We offer tuition for school students from 6th to 12th Standard. Please message us on WhatsApp to confirm current availability."],["Which subjects are taught?","Mathematics, Science, English, Social Science and Tamil. Please confirm subject availability for your child’s standard on WhatsApp."],["Do you offer exam preparation?","Yes. We support students with preparation for school and board exams through concept clarity, regular practice and revision."],["Is there a tuition centre in Neelangarai for 10th and 12th Standard?","TMMS Learnings and Study Point is a tuition centre in Neelangarai, Chennai for school students from 6th to 12th Standard, including 10th and 12th exam preparation."],["Which school boards are supported?","We support students from all boards. Please message us your child’s board and standard to confirm."],["What are the class timings?",C],["What are the tuition fees?",C],["How can I enquire about admissions?","Tap any “Enquire on WhatsApp” button on this page. WhatsApp will open with a message ready for you to review and send. You can also message us at +91 86678 15844."],["Where is TMMS Learnings and Study Point located?","6th Cross Street, Bharathiyar Nagar, Neelangarai, Chennai – 600115."]];
+var fq=[["Which classes are available?","We offer tution for school students from 6th to 12th Standard. Please message us on WhatsApp to confirm current availability."],["Which subjects are taught?","Mathematics, Science, English, Social Science and Tamil. Please confirm subject availability for your child’s standard on WhatsApp."],["Do you offer exam preparation?","Yes. We support students with preparation for school and board exams through concept clarity, regular practice and revision."],["Is there a tution centre in Neelangarai for 10th and 12th Standard?","TMMS Learnings and Study Point is a tution centre in Neelangarai, Chennai for school students from 6th to 12th Standard, including 10th and 12th exam preparation."],["Which school boards are supported?","We support students from all boards. Please message us your child’s board and standard to confirm."],["What are the class timings?",C],["What are the tution fees?",C],["How can I enquire about admissions?","Tap any “Enquire on WhatsApp” button on this page. WhatsApp will open with a message ready for you to review and send. You can also message us at +91 86678 15844."],["Where is TMMS Learnings and Study Point located?","6th Cross Street, Bharathiyar Nagar, Neelangarai, Chennai – 600115."]];
 var q=document.getElementById("faqList");
 fq.forEach(function(x,i){
  var wab="";
